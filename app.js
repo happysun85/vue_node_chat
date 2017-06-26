@@ -25,6 +25,7 @@ var relations = require('./apps/relations')
 app.use('/user', user)
 app.use('/post', post)
 app.use('/relation', relations)
+app.use('/upload', upload)
 
 process.env.PORT = 3000
 

@@ -3,10 +3,10 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import ElementUI from 'element-ui'
-import 'element-ui/lib/theme-default/index.css'
+// import ElementUI from 'element-ui'
+// import 'element-ui/lib/theme-default/index.css'
 
-Vue.use(ElementUI)
+// Vue.use(ElementUI)
 
 Vue.config.productionTip = false
 
@@ -17,4 +17,3 @@ new Vue({
   template: '<App/>',
   components: {App}
 })
-//TODO 通过路由取中文名  并且做出选项卡  完成列表功能

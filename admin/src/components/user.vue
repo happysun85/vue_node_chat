@@ -110,6 +110,7 @@
 </template>
 <script>
 import {get_all_user, add_user, del_user} from '../api/user'
+import config from '../api/config'
 export default {
   name: 'user',
   data () {
