@@ -13,6 +13,7 @@ app.use(cors())
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: true})); // for parsing application/x-www-form-urlencoded
 app.use(express.static(__dirname + '/public/'));
+app.use(express.static(__dirname + '/admin/dist/'));
 
 app.get('/', function(req, res) {
   res.send('hello world')
