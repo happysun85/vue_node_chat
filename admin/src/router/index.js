@@ -3,7 +3,7 @@ import Router from 'vue-router'
 // import User from '@/components/user'
 // import UserItem from '@/components/user-item'
 // import Post from '@/components/post'
-import Zyb from '@/components/zyb'
+// import Zyb from '@/components/zyb'
 
 Vue.use(Router)
 /*

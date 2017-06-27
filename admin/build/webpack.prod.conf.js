@@ -51,7 +51,7 @@ var webpackConfig = merge(baseWebpackConfig, {
     // see https://github.com/ampedandwired/html-webpack-plugin
     new HtmlWebpackPlugin({
       filename: config.build.index,
-      template: 'index.html',
+      template: 'temple.html',
       inject: true,
       minify: {
         removeComments: true,
@@ -93,7 +93,8 @@ var webpackConfig = merge(baseWebpackConfig, {
     ])
   ],
   externals: {
-    vue: 'Vue'
+    vue: 'Vue',
+    'element-ui': 'element-ui'
   }
 })
 
