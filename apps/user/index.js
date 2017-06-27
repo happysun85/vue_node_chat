@@ -5,6 +5,7 @@ const connect = model.connect
 var express = require('express')
 
 var router = express.Router()
+var moveImage = require('../upload/moveImage')
 
 router.get('/', function(req, res) {
   if (req.query.offset && req.query.limit) {
@@ -32,11 +33,12 @@ router.get('/:id', function(req, res) {
 })
 
 router.post('/addUser', function(req, res) {
+  moveImage(req.body.remoteUrl)
   USER.create({
     username: req.body.username,
     nickname: req.body.nickname,
     password: req.body.password,
-    logo: req.body.remoteUrl
+    logo: req.body.remoteUrl.replace('tmp', 'images')
   })
       .then((result) => {
         res.send({
