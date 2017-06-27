@@ -94,7 +94,7 @@ var webpackConfig = merge(baseWebpackConfig, {
   ],
   externals: {
     vue: 'Vue',
-    'element-ui': 'element-ui'
+    // 'element-ui': 'element-ui'
   }
 })
 

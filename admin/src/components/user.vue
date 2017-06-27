@@ -193,6 +193,7 @@ export default {
     },
     beforeAvatarUpload(){
       //TODO 上传之前 的实现
+      return true;
     },
     handleClose(){
       this.dialogVisible = false   //关闭窗口

@@ -21,12 +21,12 @@ app.get('/', function(req, res) {
 
 var user = require('./apps/user')
 var post = require('./apps/post')
-var upload = require('./apps/upload')
+var upload = require('./apps/upload/index.js')
 var relations = require('./apps/relations')
+app.use('/upload', upload)
 app.use('/user', user)
 app.use('/post', post)
 app.use('/relation', relations)
-app.use('/upload', upload)
 
 process.env.PORT = 3000
 
