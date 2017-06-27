@@ -23,7 +23,7 @@
       <el-upload
         name="logo"
         class="avatar-uploader"
-        :action="api.uploadHost+'logo'"
+        :action="uploadLogo"
         :show-file-list="false"
         :on-success="handleAvatarSuccess"
         :before-upload="beforeAvatarUpload">
@@ -150,7 +150,7 @@ export default {
       }
     };
     return {
-      api: config,
+      uploadLogo: config.uploadHost + 'logo',
       tableData: [],
       dialogVisible: false,
       confirmVisible: false,
